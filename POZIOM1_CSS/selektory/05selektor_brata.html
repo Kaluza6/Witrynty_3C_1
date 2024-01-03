@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektor brata</title>
+    <!--każdy pierwszy element p bezpośrednio po elemencie div-->
+
+    <style>
+        div+p {
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>The</p>
+        <p><q>Land</q></p>
+        <article>
+            <p>Between</p>
+        </article>
+    </div>
+    <p><u>Solar</u></p>
+    <p>Systems</p>
+   <div>Green</div>
+    <p>Grass</p><!--jest odrazu po div-ie-->
+    <p>of Tunel</p>
+
+
+</body>
+
+</html>
