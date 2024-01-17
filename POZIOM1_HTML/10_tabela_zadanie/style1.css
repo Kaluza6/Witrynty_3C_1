@@ -18,6 +18,9 @@ td {
 	text-align: center;
 	padding: 5px;
 }
-small {
+.imie2 {
 	color: grey;
+}
+.imie {
+	text-align: left;
 }
