@@ -1,0 +1,29 @@
+  * {
+            padding: 5px;
+           
+        }
+
+        table {
+            border-collapse: collapse;
+            font-family: Tahoma;
+            width: 100%;
+            border: 2px solid navy;
+            
+        }
+
+        th {
+            border: 1px solid cornflowerblue;
+            background-color: #ededed;
+            font-weight: 100;
+             text-align: center;
+
+        }
+
+        td {
+            border: 1px solid lightskyblue;
+             text-align: center;
+
+        }
+        small{
+            color: grey;
+        }
