@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Calibri;
+            font-size: 16 px;
+        }
+
+        fieldset {
+            width: 300px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        textarea {
+            background-color: aliceblue;
+            border: 1px solid red;
+            font-family: 'Courier New';
+            height: 50px;
+            width: 100%;
+        }
+
+        .autor {
+            background-color: aliceblue;
+            border: 1px solid steelblue;
+            font-family: 'Courier New';
+            width: 100%;
+        }
+
+        .komentarz {
+            background-color: lightblue;
+            border: 2px solid steelblue;
+            padding: 5px;
+            
+        }
+         .komentarz:hover {
+           background-color: aliceblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <form action="">
+        <fieldset>
+            <legend>Napisz komentarz</legend>
+            <label for="tresc">Treść:</label>
+            <textarea name="message" id="tresc" cols="30" rows="10"></textarea>
+
+            <label for="Autor">Autor:</label> <br>
+            <input id="Autor" class="autor" type="text"><br> <br>
+
+            <input class="komentarz" type="submit" value="Wyślij komentarz">
+
+
+
+
+
+
+
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+</html>
