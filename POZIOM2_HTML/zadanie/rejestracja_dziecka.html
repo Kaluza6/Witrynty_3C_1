@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid grey;
+            table-layout: fixed;
+        }
+
+        td {
+            border: 1px solid grey;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table>
+        <form action="formularz_akcja.html">
+
+            <tr>
+                <td><label for="imie">Imię:*</label></td>
+                <td><input type="text" id="imie" required></td>
+                <td><label for="Nazwisko">Nazwisko:*</label></td>
+                <td><input type="text" id="Nazwisko" required></td>
+                <td><label for="miejscowosc">Miejscowość urodzenia:*</label></td>
+                <td><input type="text" id="miejscowosc" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="2imie">Drugie imię:</label></td>
+                <td><input type="text" id="2imie"></td>
+                <td><label for="data">Data urodzenia:*</label></td>
+                <td><input type="date" name="data" id="data" required></td>
+                <td><label for="wojewodztwo">Województwo urodzenia:*</label></td>
+                <td><input type="text" id="wojewodztwo" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="6" style="text-align: center;"><input type="submit" value="Wyślij"></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </form>
+    </table>
+
+
+</body>
+
+</html>
