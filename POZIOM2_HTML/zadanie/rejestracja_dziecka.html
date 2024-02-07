@@ -9,13 +9,17 @@
         table {
             border-collapse: collapse;
             width: 100%;
-            border: 1px solid grey;
+            border: 1px solid lightgrey;
             table-layout: fixed;
         }
 
         td {
-            border: 1px solid grey;
+            border: 1px solid lightgray;
             padding: 15px;
+        }
+
+        span {
+            color: red;
         }
     </style>
 </head>
@@ -27,21 +31,39 @@
         <form action="formularz_akcja.html">
 
             <tr>
-                <td><label for="imie">Imię:*</label></td>
+                <td><label for="imie">Imię:<span>*</span></label></td>
                 <td><input type="text" id="imie" required></td>
-                <td><label for="Nazwisko">Nazwisko:*</label></td>
+                <td><label for="Nazwisko">Nazwisko:<span>*</span></label></td>
                 <td><input type="text" id="Nazwisko" required></td>
-                <td><label for="miejscowosc">Miejscowość urodzenia:*</label></td>
+                <td><label for="miejscowosc">Miejscowość urodzenia:<span>*</span></label></td>
                 <td><input type="text" id="miejscowosc" required></td>
             </tr>
 
             <tr>
                 <td><label for="2imie">Drugie imię:</label></td>
                 <td><input type="text" id="2imie"></td>
-                <td><label for="data">Data urodzenia:*</label></td>
+                <td><label for="data">Data urodzenia:<span>*</span></label></td>
                 <td><input type="date" name="data" id="data" required></td>
-                <td><label for="wojewodztwo">Województwo urodzenia:*</label></td>
-                <td><input type="text" id="wojewodztwo" required></td>
+                <td><label for="wojewodztwo">Województwo urodzenia:<span>*</span></label></td>
+                <td><select name="Województwa" id="wojewodztwo">
+                        <option value=""></option>
+                        <option value="dolnoslaskie">Dolnośląskie</option>
+                        <option value="kujawsko-pomorskie">Kujawsko-Pomorskie</option>
+                        <option value="lubelskie">Lubelskie</option>
+                        <option value="lubuskie">Lubuskie</option>
+                        <option value="lodzkie">Łódzkie</option>
+                        <option value="malopolskie">Małopolskie</option>
+                        <option value="mazowieckie">Mazowieckie</option>
+                        <option value="opolskie">Opolskie</option>
+                        <option value="podkarpackie">Podkarpackie</option>
+                        <option value="podlaskie">Podlaskie</option>
+                        <option value="pomorskie">Pomorskie</option>
+                        <option value="slaskie">Śląskie</option>
+                        <option value="swietokrzyskie">Świętokrzyskie</option>
+                        <option value="warminsko-mazurskie">Warmińsko-Mazurskie</option>
+                        <option value="wielkopolskie">Wielkopolskie</option>
+                        <option value="zachodniopomorskie">Zachodniopomorskie</option>
+                    </select></td>
             </tr>
 
             <tr>
