@@ -13,7 +13,11 @@
 
         td {
             border-left: 3px solid blueviolet;
-            padding: 10px 20px 10px 20px;
+            padding: 10px 20px;
+        }
+
+        span {
+            color: red;
         }
     </style>
 </head>
@@ -27,9 +31,10 @@
                     <input type="text" name="marka" id="marka" required>
                 </td>
 
-                <td rowspan="2"><label for="typ">Typ nadwozia<span>*</span>: </label>
+                <td rowspan="2">
+                    <label for="typ">Typ nadwozia<span>*</span>: </label>
                     <select name="typ" id="typ" multiple>
-                        <option value="coupe">coupe</option>
+                        <option value="coupe">coupé</option>
                         <option value="hatchback">hatchback</option>
                         <option value="kabriolet">kabriolet</option>
                         <option value="kombi">kombi</option>
@@ -37,33 +42,48 @@
                     </select>
                 </td>
 
-                <td><label for="data">Miesiąc i rok produkcji</label>
+                <td>
+                    <label for="data">Miesiąc i rok produkcji</label>
                     <input type="month" name="data" id="data">
                 </td>
 
-                <td>przebieg</td>
+                <td>
+                    <label for="przebieg">Przebieg:</label>
+                    <input type="range" name="przebieg" id="przebieg" min="25000" max="250000" step="25000"
+                        oninput="this.nextElementSibling.     value = this.value">
 
-                <td rowspan="2">szukaj</td>
+                    <output>25000</output>
+                </td>
+
+                <td rowspan="2"><input type="submit" value="Szukaj"></td>
 
             </tr>
 
             <tr>
-                <td><label for="model">Model:</label>
+                <td>
+                    <label for="model">Model:</label>
                     <input type="text" name="model" id="model">
 
                 </td>
 
-                <td>rodzaj paliwa
+                <td>
+                    <label for="paliwo">Rodzaj paliwa:</label>
                     <select name="paliwo" id="paliwo">
-                        <option value="benzyna"></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="benzyna">benzyna</option>
+                        <option value="benzynaelek">benzyna+elektryk</option>
+                        <option value="benzynagaz">benzyna+gaz</option>
+                        <option value="diesel">diesel</option>
+                        <option value="elektryk">elektryk</option>
                     </select>
                 </td>
 
-                <td>cena od </td>
+                <td>
+                    <label for="cena">Cena od:</label>
+                    <input type="range" name="cena" id="cena" min="2000" max="1000000" step="1000"
+                        oninput="this.nextElementSibling.     value = this.value">
+
+                    <output>2000</output>
+                </td>
 
 
             </tr>
