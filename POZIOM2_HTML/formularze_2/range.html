@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>range</legend>
+        <form action="formularz_akcja.html">
+
+            <label for="range">Ustaw wartość pomiędzy 1000 a 2000000 </label>
+            <br><br>
+            <input type="range" name="vol" id="range" max="2000000" min="1000" value="100" step="10"
+                oninput="this.nextElementSibling.     value = this.value">
+            <output>1000</output>
+            <br>
+            <input type="submit" value="Wyślij">
+        </form>
+    </fieldset>
+</body>
+
+</html>
