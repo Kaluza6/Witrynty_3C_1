@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border-left: 3px solid blueviolet;
+            padding: 10px 20px 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <form action="formularz_akcja.html">
+
+            <tr>
+                <td><label for="marka">Marka<span>*</span>:</label>
+                    <input type="text" name="marka" id="marka" required>
+                </td>
+
+                <td rowspan="2"><label for="typ">Typ nadwozia<span>*</span>: </label>
+                    <select name="typ" id="typ" multiple>
+                        <option value="coupe">coupe</option>
+                        <option value="hatchback">hatchback</option>
+                        <option value="kabriolet">kabriolet</option>
+                        <option value="kombi">kombi</option>
+                        <option value="sedan">sedan</option>
+                    </select>
+                </td>
+
+                <td><label for="data">Miesiąc i rok produkcji</label>
+                    <input type="month" name="data" id="data">
+                </td>
+
+                <td>przebieg</td>
+
+                <td rowspan="2">szukaj</td>
+
+            </tr>
+
+            <tr>
+                <td><label for="model">Model:</label>
+                    <input type="text" name="model" id="model">
+
+                </td>
+
+                <td>rodzaj paliwa
+                    <select name="paliwo" id="paliwo">
+                        <option value="benzyna"></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+
+                <td>cena od </td>
+
+
+            </tr>
+
+        </form>
+    </table>
+</body>
+
+</html>
