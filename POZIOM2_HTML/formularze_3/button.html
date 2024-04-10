@@ -9,11 +9,12 @@
 
 <body>
     <fieldset>
-        <legend>button</legend>
+        <legend>Przycisk zwykły i wysyłający</legend>
         <form action="formularz_akcja.html">
-            <br>
-            <label for="szukaj">Szukaj w Google:</label>
-            <input type="search" name="wyszukaj" id="szukaj">
+            <button onclick="alert('Element <button>');" type="button">Funkcja alert() [JavaScript]
+            </button> <!--button musi mieć type=button bo inaczej wysyłałby formularz-->
+            <br><br>
+            <input type="button" value="Również funkcja alert()" onclick="alert('Element <input> typu button');">
             <br><br>
             <input type="submit" value="Wyślij">
         </form>
