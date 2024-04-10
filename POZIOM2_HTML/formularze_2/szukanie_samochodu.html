@@ -33,7 +33,7 @@
 
                 <td rowspan="2">
                     <label for="typ">Typ nadwozia<span>*</span>: </label>
-                    <select name="typ" id="typ" multiple>
+                    <select name="typ" id="typ" multiple size="5">
                         <option value="coupe">coupé</option>
                         <option value="hatchback">hatchback</option>
                         <option value="kabriolet">kabriolet</option>
@@ -50,7 +50,7 @@
                 <td>
                     <label for="przebieg">Przebieg:</label>
                     <input type="range" name="przebieg" id="przebieg" min="25000" max="250000" step="25000"
-                        oninput="this.nextElementSibling.     value = this.value">
+                        value="25000" oninput="this.nextElementSibling.     value = this.value">
 
                     <output>25000</output>
                 </td>
@@ -79,8 +79,8 @@
 
                 <td>
                     <label for="cena">Cena od:</label>
-                    <input type="range" name="cena" id="cena" min="2000" max="1000000" step="1000"
-                        oninput="this.nextElementSibling.     value = this.value">
+                    <input type="range" name="cena" id="cena" min="2000" max="500000" step="1000" value="2000"
+                        oninput="this.nextElementSibling.value = this.value">
 
                     <output>2000</output>
                 </td>
